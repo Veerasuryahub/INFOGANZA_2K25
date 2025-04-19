@@ -192,7 +192,7 @@
 
       <!-- Countdown -->
       <div id="countdown" class="text-xl font-mono mb-8 bg-black bg-opacity-40 px-6 py-2 rounded-full">
-        ⏳ Get-Ready: <span id="timer">Loading...</span>
+        ⏳ Get - Ready : <span id="timer">Loading...</span>
       </div>
 
       <!-- Register Button -->
@@ -243,21 +243,21 @@
   </section>
 
   <!-- Schedule Section - Futuristic Timeline -->
-<section id="schedule" class="relative py-20 bg-black overflow-hidden">
-  <!-- Animated Background Grid -->
-  <div class="absolute inset-0 opacity-20">
+<!-- Schedule Section -->
+<section id="schedule" class="py-16 bg-black relative overflow-hidden">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 opacity-10">
     <div class="absolute inset-0 bg-grid-white/[0.05]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-gray-900"></div>
   </div>
 
-  <!-- Glowing Center Line -->
   <div class="absolute left-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-green-400 to-transparent transform -translate-x-1/2 z-0">
     <div class="absolute top-0 left-1/2 w-3 h-3 bg-green-400 rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
   </div>
 
   <div class="container mx-auto px-4 sm:px-6 relative z-10">
     <!-- Section Header -->
-    <div class="text-center mb-16 reveal from-bottom">
+    <div class="text-center mb-16">
       <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
         <span class="text-green-400">⚡</span> Event Schedule
       </h2>
@@ -267,158 +267,158 @@
     </div>
 
     <!-- Timeline Container -->
-    <div class="max-w-4xl mx-auto space-y-12">
-      <!-- Timeline Item 1 -->
-      <div class="timeline-item reveal from-left flex items-start group">
+    <div class="max-w-5xl mx-auto space-y-20 md:space-y-16">
+      <!-- Timeline Item 1 - Inauguration -->
+      <div class="timeline-item reveal from-left flex flex-col md:flex-row items-center md:items-start group w-full mx-auto px-4">
         <!-- Time Badge -->
-        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
-          <span class="inline-block px-3 py-1 rounded-full bg-green-900 text-green-300 text-sm font-mono font-bold">
+        <div class="flex-shrink-0 w-full md:w-48 mt-1 mb-3 md:mb-0 md:mr-8 text-center md:text-right">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-green-900 text-green-300 text-sm font-mono font-bold whitespace-nowrap">
             09:00 AM - 10:00 AM
           </span>
         </div>
         
         <!-- Event Card -->
-        <div class="relative flex-1">
+        <div class="relative w-full md:flex-1">
           <!-- Glowing Dot -->
-          <div class="absolute -left-11 top-4 w-4 h-4 bg-green-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          <div class="absolute -top-6 left-1/2 -ml-2.5 md:-left-12 md:top-5 w-5 h-5 bg-green-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
           
           <!-- Content -->
-          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-green-400 group-hover:shadow-lg group-hover:shadow-green-500/20">
-            <div class="flex items-center mb-2">
-              <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center mr-4">
-                <i class="fas fa-microphone-alt text-white"></i>
+          <div class="bg-gray-900 bg-opacity-80 p-7 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-green-400 group-hover:shadow-lg group-hover:shadow-green-500/20">
+            <div class="flex items-center mb-3">
+              <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-5">
+                <i class="fas fa-microphone-alt text-white text-xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-purple-400">Inauguration</h3>
+              <h3 class="text-2xl font-bold text-purple-400">Inauguration</h3>
             </div>
-            <p class="text-gray-300 mb-2">Official opening ceremony with keynote speakers</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Main Auditorium</span>
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">All Participants</span>
+            <p class="text-gray-300 mb-3 text-lg">Official opening ceremony with keynote speakers</p>
+            <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">Main Auditorium</span>
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">All Participants</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Timeline Item 2 -->
-      <div class="timeline-item reveal from-right flex items-start group">
+      <!-- Timeline Item 2 - Technical Events -->
+      <div class="timeline-item reveal from-right flex flex-col md:flex-row items-center md:items-start group w-full mx-auto px-4">
         <!-- Time Badge -->
-        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
-          <span class="inline-block px-3 py-1 rounded-full bg-blue-900 text-blue-300 text-sm font-mono font-bold">
+        <div class="flex-shrink-0 w-full md:w-48 mt-1 mb-3 md:mb-0 md:mr-8 text-center md:text-right">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-blue-900 text-blue-300 text-sm font-mono font-bold whitespace-nowrap">
             10:15 AM - 12:30 PM
           </span>
         </div>
         
         <!-- Event Card -->
-        <div class="relative flex-1">
+        <div class="relative w-full md:flex-1">
           <!-- Glowing Dot -->
-          <div class="absolute -left-11 top-4 w-4 h-4 bg-blue-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          <div class="absolute -top-6 left-1/2 -ml-2.5 md:-left-12 md:top-5 w-5 h-5 bg-blue-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
           
           <!-- Content -->
-          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-blue-400 group-hover:shadow-lg group-hover:shadow-blue-500/20">
-            <div class="flex items-center mb-2">
-              <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mr-4">
-                <i class="fas fa-laptop-code text-white"></i>
+          <div class="bg-gray-900 bg-opacity-80 p-7 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-blue-400 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+            <div class="flex items-center mb-3">
+              <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-5">
+                <i class="fas fa-laptop-code text-white text-xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-blue-400">Technical Events</h3>
+              <h3 class="text-2xl font-bold text-blue-400">Technical Events</h3>
             </div>
-            <p class="text-gray-300 mb-2">Battle of wits in this rapid-fire technical quiz</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Lab 201</span>
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Teams of 2</span>
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">30 mins</span>
+            <p class="text-gray-300 mb-3 text-lg">Slide Sync, Code War, Web Weave, Data Nexus And Technical Quiz </p>
+            <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">Lab 2</span>
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">Individual</span>
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">45 Mins/event</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Timeline Item 3 -->
-      <div class="timeline-item reveal from-left flex items-start group">
+      <!-- Timeline Item 3 - Lunch Break -->
+      <div class="timeline-item reveal from-left flex flex-col md:flex-row items-center md:items-start group w-full mx-auto px-4">
         <!-- Time Badge -->
-        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
-          <span class="inline-block px-3 py-1 rounded-full bg-yellow-900 text-yellow-300 text-sm font-mono font-bold">
+        <div class="flex-shrink-0 w-full md:w-48 mt-1 mb-3 md:mb-0 md:mr-8 text-center md:text-right">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-yellow-900 text-yellow-300 text-sm font-mono font-bold whitespace-nowrap">
             12:30 PM - 01:30 PM
           </span>
         </div>
         
         <!-- Event Card -->
-        <div class="relative flex-1">
+        <div class="relative w-full md:flex-1">
           <!-- Glowing Dot -->
-          <div class="absolute -left-11 top-4 w-4 h-4 bg-yellow-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          <div class="absolute -top-6 left-1/2 -ml-2.5 md:-left-12 md:top-5 w-5 h-5 bg-yellow-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
           
           <!-- Content -->
-          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-yellow-400 group-hover:shadow-lg group-hover:shadow-yellow-500/20">
-            <div class="flex items-center mb-2">
-              <div class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center mr-4">
-                <i class="fas fa-utensils text-white"></i>
+          <div class="bg-gray-900 bg-opacity-80 p-7 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-yellow-400 group-hover:shadow-lg group-hover:shadow-yellow-500/20">
+            <div class="flex items-center mb-3">
+              <div class="w-12 h-12 rounded-full bg-yellow-600 flex items-center justify-center mr-5">
+                <i class="fas fa-utensils text-white text-xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-yellow-400">Lunch Break</h3>
+              <h3 class="text-2xl font-bold text-yellow-400">Lunch Break</h3>
             </div>
-            <p class="text-gray-300 mb-2">Networking and refreshments in the courtyard</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Cafeteria</span>
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">1 hour</span>
+            <p class="text-gray-300 mb-3 text-lg">Networking and refreshments in the courtyard</p>
+            <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">Cafeteria</span>
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">1 hour</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Timeline Item 4 -->
-      <div class="timeline-item reveal from-right flex items-start group">
+      <!-- Timeline Item 4 - Non-Technical Events -->
+      <div class="timeline-item reveal from-right flex flex-col md:flex-row items-center md:items-start group w-full mx-auto px-4">
         <!-- Time Badge -->
-        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
-          <span class="inline-block px-3 py-1 rounded-full bg-pink-900 text-pink-300 text-sm font-mono font-bold">
+        <div class="flex-shrink-0 w-full md:w-48 mt-1 mb-3 md:mb-0 md:mr-8 text-center md:text-right">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-pink-900 text-pink-300 text-sm font-mono font-bold whitespace-nowrap">
             01:45 PM - 04:00 PM
           </span>
         </div>
         
         <!-- Event Card -->
-        <div class="relative flex-1">
+        <div class="relative w-full md:flex-1">
           <!-- Glowing Dot -->
-          <div class="absolute -left-11 top-4 w-4 h-4 bg-pink-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          <div class="absolute -top-6 left-1/2 -ml-2.5 md:-left-12 md:top-5 w-5 h-5 bg-pink-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
           
           <!-- Content -->
-          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-pink-400 group-hover:shadow-lg group-hover:shadow-pink-500/20">
-            <div class="flex items-center mb-2">
-              <div class="w-10 h-10 rounded-full bg-pink-600 flex items-center justify-center mr-4">
-                <i class="fas fa-film text-white"></i>
+          <div class="bg-gray-900 bg-opacity-80 p-7 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-pink-400 group-hover:shadow-lg group-hover:shadow-pink-500/20">
+            <div class="flex items-center mb-3">
+              <div class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center mr-5">
+                <i class="fas fa-film text-white text-xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-pink-400">Non-Technical Events</h3>
+              <h3 class="text-2xl font-bold text-pink-400">Non-Technical Events</h3>
             </div>
-            <p class="text-gray-300 mb-2">Screening of student-created tech-themed short films</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Auditorium</span>
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Max 5 mins</span>
+            <p class="text-gray-300 mb-3 text-lg">Connexion,Short Film, Riddle, Mr.Marketing And Crosswords</p>
+            <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">Lab 3</span>
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">Team/individual </span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Timeline Item 5 -->
-      <div class="timeline-item reveal from-left flex items-start group">
+      <!-- Timeline Item 5 - Awards Ceremony -->
+      <div class="timeline-item reveal from-left flex flex-col md:flex-row items-center md:items-start group w-full mx-auto px-4">
         <!-- Time Badge -->
-        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
-          <span class="inline-block px-3 py-1 rounded-full bg-teal-900 text-teal-300 text-sm font-mono font-bold">
+        <div class="flex-shrink-0 w-full md:w-48 mt-1 mb-3 md:mb-0 md:mr-8 text-center md:text-right">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-teal-900 text-teal-300 text-sm font-mono font-bold whitespace-nowrap">
             04:15 PM - 05:00 PM
           </span>
         </div>
         
         <!-- Event Card -->
-        <div class="relative flex-1">
+        <div class="relative w-full md:flex-1">
           <!-- Glowing Dot -->
-          <div class="absolute -left-11 top-4 w-4 h-4 bg-teal-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          <div class="absolute -top-6 left-1/2 -ml-2.5 md:-left-12 md:top-5 w-5 h-5 bg-teal-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
           
           <!-- Content -->
-          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-teal-400 group-hover:shadow-lg group-hover:shadow-teal-500/20">
-            <div class="flex items-center mb-2">
-              <div class="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center mr-4">
-                <i class="fas fa-trophy text-white"></i>
+          <div class="bg-gray-900 bg-opacity-80 p-7 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-teal-400 group-hover:shadow-lg group-hover:shadow-teal-500/20">
+            <div class="flex items-center mb-3">
+              <div class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center mr-5">
+                <i class="fas fa-trophy text-white text-xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-teal-400">Awards Ceremony</h3>
+              <h3 class="text-2xl font-bold text-teal-400">Awards Ceremony</h3>
             </div>
-            <p class="text-gray-300 mb-2">Prize distribution and closing remarks</p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Main Stage</span>
-              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">All Attendees</span>
+            <p class="text-gray-300 mb-3 text-lg">Prize distribution and closing remarks</p>
+            <div class="flex flex-wrap gap-3 mt-5 justify-center md:justify-start">
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">Main Stage</span>
+              <span class="px-3 py-1.5 bg-gray-800 rounded-full text-sm text-gray-400">All Attendees</span>
             </div>
           </div>
         </div>
@@ -426,6 +426,8 @@
     </div>
   </div>
 </section>
+
+
 
 <style>
   /* Background grid pattern */
@@ -519,8 +521,49 @@
     <!-- Events Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- ===== TECHNICAL EVENTS ===== -->
-      <!-- Event 1 -->
+<!-- Event 1 -->
       <div class="event-card reveal from-left tech" data-category="tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center">
+              <i class="fas fa-chalkboard text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Slide Sync</h3>
+            <p class="text-gray-300 text-center mb-4">Craft and present compelling technical presentations</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-blue-300 font-mono">Team (2-3)</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-cyan-300 font-mono">15 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-blue-400"></i>
+                    <span>Theme revealed 24 hours before event</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-blue-400"></i>
+                    <span>10 slides maximum</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-blue-400"></i>
+                    <span>Judged on content and delivery</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event 2 -->
+      <div class="event-card reveal from-bottom tech" data-category="tech">
         <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-green-500/20">
           <div class="p-6">
             <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-purple-600 to-blue-500 flex items-center justify-center">
@@ -561,8 +604,8 @@
         </div>
       </div>
 
-      <!-- Event 2 -->
-      <div class="event-card reveal from-bottom tech" data-category="tech">
+      <!-- Event 3 -->
+      <div class="event-card reveal from-right tech" data-category="tech">
         <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20">
           <div class="p-6">
             <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center">
@@ -603,8 +646,8 @@
         </div>
       </div>
 
-      <!-- Event 3 -->
-      <div class="event-card reveal from-right tech" data-category="tech">
+      <!-- Event 4 -->
+      <div class="event-card reveal from-left tech" data-category="tech">
         <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/20">
           <div class="p-6">
             <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 flex items-center justify-center">
@@ -644,9 +687,91 @@
           </div>
         </div>
       </div>
+      <!-- Event 5 -->
+      <div class="event-card reveal from-bottom tech" data-category="tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-purple-600 to-indigo-500 flex items-center justify-center">
+              <i class="fas fa-question-circle text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Technical Quiz</h3>
+            <p class="text-gray-300 text-center mb-4">Test your CS knowledge in this rapid-fire quiz</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-purple-300 font-mono">Team (2)</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-indigo-300 font-mono">30 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-purple-400"></i>
+                    <span>3 rounds: MCQs, Rapid Fire, and Buzzer</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-purple-400"></i>
+                    <span>Topics: Algorithms, Data Structures, OS, DBMS</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-purple-400"></i>
+                    <span>Negative marking for wrong answers</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-purple-600 hover:bg-purple-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- ===== NON-TECHNICAL EVENTS ===== -->
-      <!-- Event 4 -->
+       <!-- Event 1 -->
+      <div class="event-card reveal from-right non-tech" data-category="non-tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-yellow-600 to-amber-500 flex items-center justify-center">
+              <i class="fas fa-puzzle-piece text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Connexion</h3>
+            <p class="text-gray-300 text-center mb-4">Connect clues and solve the puzzle</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-yellow-300 font-mono">Team (2)</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-amber-300 font-mono">45 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
+                    <span>3 rounds of increasing difficulty</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
+                    <span>Visual and text-based clues</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
+                    <span>Fastest correct answer wins</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-yellow-600 hover:bg-yellow-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event 2 -->
       <div class="event-card reveal from-left non-tech" data-category="non-tech">
         <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-pink-400 hover:shadow-lg hover:shadow-pink-500/20">
           <div class="p-6">
@@ -687,18 +812,99 @@
           </div>
         </div>
       </div>
-
-      <!-- Event 5 -->
+<!-- Event 3 -->
       <div class="event-card reveal from-bottom non-tech" data-category="non-tech">
-        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-500/20">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/20">
           <div class="p-6">
-            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-yellow-600 to-amber-500 flex items-center justify-center">
-              <i class="fas fa-chess-knight text-2xl text-white"></i>
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-red-600 to-pink-500 flex items-center justify-center">
+              <i class="fas fa-brain text-2xl text-white"></i>
             </div>
-            <h3 class="text-xl font-bold text-center text-white mb-2">MindMaze</h3>
-            <p class="text-gray-300 text-center mb-4">Puzzle-solving and strategy challenge</p>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Riddle</h3>
+            <p class="text-gray-300 text-center mb-4">Solve creative riddles against the clock</p>
             <div class="flex justify-center gap-2 mb-4">
-              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-yellow-300 font-mono">Individual</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-red-300 font-mono">Individual</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-pink-300 font-mono">30 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-red-400"></i>
+                    <span>10 riddles of varying difficulty</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-red-400"></i>
+                    <span>Points based on speed and accuracy</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-red-400"></i>
+                    <span>Lateral thinking encouraged</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-red-600 hover:bg-red-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event 4 -->
+      <div class="event-card reveal from-right non-tech" data-category="non-tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-emerald-600 to-teal-500 flex items-center justify-center">
+              <i class="fas fa-bullhorn text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Mr. Marketing</h3>
+            <p class="text-gray-300 text-center mb-4">Create and pitch your marketing strategy</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-emerald-300 font-mono">Individual</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-teal-300 font-mono">5 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-emerald-400"></i>
+                    <span>Product/service revealed on spot</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-emerald-400"></i>
+                    <span>5 minutes to prepare pitch</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-emerald-400"></i>
+                    <span>Judged on creativity and feasibility</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-emerald-600 hover:bg-emerald-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event 5 -->
+      <div class="event-card reveal from-left non-tech" data-category="non-tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-orange-600 to-amber-500 flex items-center justify-center">
+              <i class="fas fa-font text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Crosswords</h3>
+            <p class="text-gray-300 text-center mb-4">Solve tech-themed crossword puzzles</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-orange-300 font-mono">Individual</span>
               <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-amber-300 font-mono">45 mins</span>
             </div>
             <div class="mt-6 pt-4 border-t border-gray-700">
@@ -709,58 +915,16 @@
               <div class="event-details-content hidden pt-4">
                 <ul class="text-sm text-gray-400 space-y-2">
                   <li class="flex items-start">
-                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
-                    <span>3 rounds: Logic, Math, Visual</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
-                    <span>No prior knowledge needed</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
-                    <span>Speed + accuracy matter</span>
-                  </li>
-                </ul>
-                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-yellow-600 hover:bg-yellow-700 rounded-lg text-white font-medium transition-all">
-                  Register Now
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Event 6 -->
-      <div class="event-card reveal from-right non-tech" data-category="non-tech">
-        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20">
-          <div class="p-6">
-            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-orange-600 to-red-500 flex items-center justify-center">
-              <i class="fas fa-microphone-alt text-2xl text-white"></i>
-            </div>
-            <h3 class="text-xl font-bold text-center text-white mb-2">Pitch Perfect</h3>
-            <p class="text-gray-300 text-center mb-4">Tech product pitching competition</p>
-            <div class="flex justify-center gap-2 mb-4">
-              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-orange-300 font-mono">Team (2)</span>
-              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-red-300 font-mono">5 mins</span>
-            </div>
-            <div class="mt-6 pt-4 border-t border-gray-700">
-              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
-                View Details
-                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
-              </button>
-              <div class="event-details-content hidden pt-4">
-                <ul class="text-sm text-gray-400 space-y-2">
-                  <li class="flex items-start">
                     <i class="fas fa-circle text-[6px] mt-2 mr-2 text-orange-400"></i>
-                    <span>Invent a futuristic tech product</span>
+                    <span>2 puzzles of varying difficulty</span>
                   </li>
                   <li class="flex items-start">
                     <i class="fas fa-circle text-[6px] mt-2 mr-2 text-orange-400"></i>
-                    <span>5-minute pitch + Q&A</span>
+                    <span>Tech terminology and acronyms</span>
                   </li>
                   <li class="flex items-start">
                     <i class="fas fa-circle text-[6px] mt-2 mr-2 text-orange-400"></i>
-                    <span>Judged on creativity + feasibility</span>
+                    <span>Bonus points for fastest completion</span>
                   </li>
                 </ul>
                 <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-orange-600 hover:bg-orange-700 rounded-lg text-white font-medium transition-all">

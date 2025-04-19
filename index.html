@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infoganza_2k25 | National-Level Symposium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+    <style>
+      #home {
+  background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+  background-size: 300% 300%;
+  animation: gradientBG 10s ease infinite;
+  font-family: 'Orbitron', sans-serif;
+  background: url('sp.jpg') no-repeat center center/cover;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+
+  /* Background only for Home section */
+  
+  #about {
+    background: url('space.jpg') no-repeat center center/cover;
+  }
+
+  @keyframes fadeBackground {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* Button style */
+  .rocket-btn {
+    background-color: #2d9cdb;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .rocket-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05) translateY(-3px);
+  }
+
+  /* Glow animation */
+  .glow {
+    animation: glow 2s infinite ease-in-out;
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 10px #2d9cdb, 0 0 20px #27ae60, 0 0 30px #ffffff;
+    }
+    50% {
+      box-shadow: 0 0 20px #ffffff, 0 0 30px #27ae60, 0 0 40px #2d9cdb;
+    }
+  }
+
+  /* Fade Up Animation */
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-up {
+    animation: fadeUp 2s ease forwards;
+  }
+
+  /* Typewriter effect */
+  .typewriter span {
+    display: inline-block;
+    border-right: 2px solid #27ae60;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20, end), blink 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #27ae60; }
+  }
+  /* Base Reveal Style */
+  .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants */
+.reveal.from-left { transform: translateX(-40px); }
+.reveal.from-right { transform: translateX(40px); }
+.reveal.from-bottom { transform: translateY(40px); }
+
+.reveal.active.from-left,
+.reveal.active.from-right,
+.reveal.active.from-bottom {
+  transform: translate(0);
+}
+
+
+</style>
+
+  </head>
+
+  <body class="relative">
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-40 fixed top-0 left-0 w-full z-50 shadow-md font-orbitron">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <h1 class="text-xl font-bold text-white">Infoganza_2k25</h1>
+      
+            <!-- Desktop Menu -->
+<div class="hidden md:flex items-center space-x-8"> <!-- Increased spacing from 6 to 8 -->
+    <ul class="flex space-x-8 text-white text-sm font-semibold"> <!-- Increased spacing here too -->
+      <li><a href="#home" class="hover:text-green-400">Home</a></li>
+      <li><a href="#about" class="hover:text-green-400">About</a></li>
+      <li><a href="#schedule" class="hover:text-green-400">Schedule</a></li>
+      <li><a href="#events" class="hover:text-green-400">Events</a></li>
+      <li><a href="#register" class="hover:text-green-400">Register</a></li>
+      <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+    </ul>
+  
+    <!-- Register Button -->
+    <a href="#register" class="ml-6 px-4 py-2 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition duration-300">
+      Register
+    </a>
+  </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden">
+              <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="md:hidden hidden mt-2 text-white text-sm font-semibold space-y-2">
+            <a href="#home" class="block hover:text-green-400">Home</a>
+            <a href="#about" class="block hover:text-green-400">About</a>
+            <a href="#schedule" class="block hover:text-green-400">Schedule</a>
+            <a href="#events" class="block hover:text-green-400">Events</a>
+            <a href="#register" class="block hover:text-green-400">Register</a>
+            <a href="#contact" class="block hover:text-green-400">Contact</a>
+      
+            <!-- Register Button in Mobile -->
+            <a href="#register" class="block mt-2 px-4 py-2 rounded-full bg-green-500 text-white text-center font-semibold hover:bg-green-600 transition duration-300">
+              Register
+            </a>
+          </div>
+        </div>
+      </nav>
+      
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col justify-center items-center min-h-screen text-center px-6 pt-20 fade-up">
+      <h2 class="reveal from-bottom text-4xl sm:text-6xl font-bold mb-6 leading-tight">
+        Welcome to <span id="typewriter" class="text-green-400"></span>
+      </h2>
+      <p class="reveal from-bottom text-lg sm:text-xl max-w-2xl mb-8">
+        A national-level technical symposium hosted by the Department of Computer Science and Engineering at Government College of Engineering, Bodinayakkanur.
+      </p>
+
+      <!-- Countdown -->
+      <div id="countdown" class="text-xl font-mono mb-8 bg-black bg-opacity-40 px-6 py-2 rounded-full">
+        ⏳ T-minus: <span id="timer">Loading...</span>
+      </div>
+
+      <!-- Register Button -->
+      <a href="https://forms.gle/3B6zjxubVHB6eHvu8" target="_blank">
+        <button class="reveal from-bottom rocket-btn glow flex items-center gap-2">
+          🚀 Register Now
+        </button>
+      </a>
+    </section>
+
+
+<!-- About Section -->
+<section id="about" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-center bg-black bg-opacity-40 relative overflow-hidden">
+    <!-- Sparkle effect remains the same -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+      <div class="w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.05),transparent)] animate-pulse"></div>
+    </div>
+  
+    <h2 class="reveal from-bottom text-4xl sm:text-5xl font-bold text-green-400 mb-6 z-10">About Infoganza_2k25</h2>
+  
+    <p class="reveal from-bottom text-lg sm:text-xl max-w-4xl mb-12 z-10">
+      Infoganza_2k25 is a national-level technical symposium organized by the Department of Computer Science and Engineering at Government College of Engineering, Bodinayakkanur.
+    </p>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left text-white max-w-6xl z-10">
+      <div class="reveal from-left bg-white bg-opacity-10 p-6 rounded-2xl transition-transform transform hover:scale-105 hover:-rotate-1 hover:shadow-xl glow-card">
+        <h3 class="text-3xl text-green-400 font-bold mb-2 flex items-center gap-2">🚀 Vision</h3>
+        <p>To ignite the passion for technology and innovation...</p>
+      </div>
+  
+      <div class="reveal from-bottom bg-white bg-opacity-10 p-6 rounded-2xl transition-transform transform hover:scale-105 hover:rotate-1 hover:shadow-xl glow-card">
+        <h3 class="text-3xl text-green-400 font-bold mb-2 flex items-center gap-2">🎯 Mission</h3>
+        <p>To provide a vibrant platform where students can express...</p>
+      </div>
+  
+      <div class="reveal from-right bg-white bg-opacity-10 p-6 rounded-2xl transition-transform transform hover:scale-105 hover:-rotate-2 hover:shadow-xl glow-card">
+        <h3 class="text-3xl text-green-400 font-bold mb-2 flex items-center gap-2">🧠 Hosted By</h3>
+        <p>Department of Computer Science and Engineering,...</p>
+      </div>
+    </div>
+  
+  
+    <style>
+      .glow-card:hover {
+        box-shadow: 0 0 15px #2d9cdb, 0 0 30px #27ae60, 0 0 50px rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </section>
+
+  <!-- Schedule Section - Futuristic Timeline -->
+<section id="schedule" class="relative py-20 bg-black overflow-hidden">
+  <!-- Animated Background Grid -->
+  <div class="absolute inset-0 opacity-20">
+    <div class="absolute inset-0 bg-grid-white/[0.05]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-gray-900"></div>
+  </div>
+
+  <!-- Glowing Center Line -->
+  <div class="absolute left-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-green-400 to-transparent transform -translate-x-1/2 z-0">
+    <div class="absolute top-0 left-1/2 w-3 h-3 bg-green-400 rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16 reveal from-bottom">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+        <span class="text-green-400">⚡</span> Event Schedule
+      </h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+        Mark your calendars for May 9, 2025 - a day packed with tech brilliance!
+      </p>
+    </div>
+
+    <!-- Timeline Container -->
+    <div class="max-w-4xl mx-auto space-y-12">
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item reveal from-left flex items-start group">
+        <!-- Time Badge -->
+        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
+          <span class="inline-block px-3 py-1 rounded-full bg-green-900 text-green-300 text-sm font-mono font-bold">
+            09:00 AM - 10:00 AM
+          </span>
+        </div>
+        
+        <!-- Event Card -->
+        <div class="relative flex-1">
+          <!-- Glowing Dot -->
+          <div class="absolute -left-11 top-4 w-4 h-4 bg-green-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          
+          <!-- Content -->
+          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-green-400 group-hover:shadow-lg group-hover:shadow-green-500/20">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center mr-4">
+                <i class="fas fa-microphone-alt text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-purple-400">Inauguration</h3>
+            </div>
+            <p class="text-gray-300 mb-2">Official opening ceremony with keynote speakers</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Main Auditorium</span>
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">All Participants</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item reveal from-right flex items-start group">
+        <!-- Time Badge -->
+        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
+          <span class="inline-block px-3 py-1 rounded-full bg-blue-900 text-blue-300 text-sm font-mono font-bold">
+            10:15 AM - 12:30 PM
+          </span>
+        </div>
+        
+        <!-- Event Card -->
+        <div class="relative flex-1">
+          <!-- Glowing Dot -->
+          <div class="absolute -left-11 top-4 w-4 h-4 bg-blue-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          
+          <!-- Content -->
+          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-blue-400 group-hover:shadow-lg group-hover:shadow-blue-500/20">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mr-4">
+                <i class="fas fa-laptop-code text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-blue-400">Technical Events</h3>
+            </div>
+            <p class="text-gray-300 mb-2">Battle of wits in this rapid-fire technical quiz</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Lab 201</span>
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Teams of 2</span>
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">30 mins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item reveal from-left flex items-start group">
+        <!-- Time Badge -->
+        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
+          <span class="inline-block px-3 py-1 rounded-full bg-yellow-900 text-yellow-300 text-sm font-mono font-bold">
+            12:30 PM - 01:30 PM
+          </span>
+        </div>
+        
+        <!-- Event Card -->
+        <div class="relative flex-1">
+          <!-- Glowing Dot -->
+          <div class="absolute -left-11 top-4 w-4 h-4 bg-yellow-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          
+          <!-- Content -->
+          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-yellow-400 group-hover:shadow-lg group-hover:shadow-yellow-500/20">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 rounded-full bg-yellow-600 flex items-center justify-center mr-4">
+                <i class="fas fa-utensils text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-yellow-400">Lunch Break</h3>
+            </div>
+            <p class="text-gray-300 mb-2">Networking and refreshments in the courtyard</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Cafeteria</span>
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">1 hour</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 4 -->
+      <div class="timeline-item reveal from-right flex items-start group">
+        <!-- Time Badge -->
+        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
+          <span class="inline-block px-3 py-1 rounded-full bg-pink-900 text-pink-300 text-sm font-mono font-bold">
+            01:45 PM - 04:00 PM
+          </span>
+        </div>
+        
+        <!-- Event Card -->
+        <div class="relative flex-1">
+          <!-- Glowing Dot -->
+          <div class="absolute -left-11 top-4 w-4 h-4 bg-pink-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          
+          <!-- Content -->
+          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-pink-400 group-hover:shadow-lg group-hover:shadow-pink-500/20">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 rounded-full bg-pink-600 flex items-center justify-center mr-4">
+                <i class="fas fa-film text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-pink-400">Non-Technical Events</h3>
+            </div>
+            <p class="text-gray-300 mb-2">Screening of student-created tech-themed short films</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Auditorium</span>
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Max 5 mins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Item 5 -->
+      <div class="timeline-item reveal from-left flex items-start group">
+        <!-- Time Badge -->
+        <div class="flex-shrink-0 w-30 mt-1 mr-6 text-right">
+          <span class="inline-block px-3 py-1 rounded-full bg-teal-900 text-teal-300 text-sm font-mono font-bold">
+            04:15 PM - 05:00 PM
+          </span>
+        </div>
+        
+        <!-- Event Card -->
+        <div class="relative flex-1">
+          <!-- Glowing Dot -->
+          <div class="absolute -left-11 top-4 w-4 h-4 bg-teal-400 rounded-full border-4 border-black z-10 group-hover:animate-ping"></div>
+          
+          <!-- Content -->
+          <div class="bg-gray-900 bg-opacity-80 p-6 rounded-xl border border-gray-800 backdrop-blur-sm transition-all duration-300 group-hover:border-teal-400 group-hover:shadow-lg group-hover:shadow-teal-500/20">
+            <div class="flex items-center mb-2">
+              <div class="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center mr-4">
+                <i class="fas fa-trophy text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold text-teal-400">Awards Ceremony</h3>
+            </div>
+            <p class="text-gray-300 mb-2">Prize distribution and closing remarks</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">Main Stage</span>
+              <span class="px-2 py-1 bg-gray-800 rounded-full text-xs text-gray-400">All Attendees</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Background grid pattern */
+  .bg-grid-white\/\[0\.05\] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+
+  /* Timeline animations */
+  .timeline-item {
+    transition: transform 0.3s ease;
+  }
+  .timeline-item:hover {
+    transform: translateX(5px);
+  }
+
+  /* Reveal animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal.from-left {
+    transform: translateX(-40px);
+  }
+  .reveal.from-right {
+    transform: translateX(40px);
+  }
+  .reveal.from-bottom {
+    transform: translateY(40px);
+  }
+
+  /* Glow effects */
+  .group-hover\:shadow-green-500\/20:hover {
+    box-shadow: 0 10px 25px rgba(74, 222, 128, 0.2);
+  }
+</style>
+
+<script>
+  // Intersection Observer for reveal animations
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  });
+</script>
+
+<!-- Events Section -->
+<section id="events" class="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute inset-0 bg-grid-white/[0.05]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-gray-900"></div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16 reveal from-bottom">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+        <span class="text-green-400">✨</span> Events
+      </h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+        Compete in our thrilling technical challenges and creative non-tech activities
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="flex justify-center mb-12 reveal from-bottom">
+      <div class="inline-flex bg-gray-800 rounded-full p-1">
+        <button class="event-filter-btn active px-6 py-2 rounded-full text-white bg-gray-700 transition-all" data-filter="all">
+          All Events
+        </button>
+        <button class="event-filter-btn px-6 py-2 rounded-full text-gray-400 hover:text-white transition-all" data-filter="tech">
+          <i class="fas fa-laptop-code mr-2"></i> Technical
+        </button>
+        <button class="event-filter-btn px-6 py-2 rounded-full text-gray-400 hover:text-white transition-all" data-filter="non-tech">
+          <i class="fas fa-paint-brush mr-2"></i> Non-Tech
+        </button>
+      </div>
+    </div>
+
+    <!-- Events Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- ===== TECHNICAL EVENTS ===== -->
+      <!-- Event 1 -->
+      <div class="event-card reveal from-left tech" data-category="tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-green-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-purple-600 to-blue-500 flex items-center justify-center">
+              <i class="fas fa-code text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Code Crusade</h3>
+            <p class="text-gray-300 text-center mb-4">Debug and optimize code under time pressure</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-blue-300 font-mono">Individual</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-purple-300 font-mono">60 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-green-400"></i>
+                    <span>3 rounds of increasing difficulty</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-green-400"></i>
+                    <span>Languages: Python, Java, C++</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-green-400"></i>
+                    <span>Prizes for top 3 performers</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-green-600 hover:bg-green-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card reveal from-bottom tech" data-category="tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center">
+              <i class="fas fa-globe text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Web Weave</h3>
+            <p class="text-gray-300 text-center mb-4">Build a responsive website from scratch</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-blue-300 font-mono">Team (2)</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-cyan-300 font-mono">90 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-blue-400"></i>
+                    <span>Theme revealed at event start</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-blue-400"></i>
+                    <span>Allowed: HTML, CSS, JS, Bootstrap</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-blue-400"></i>
+                    <span>Judged on design + functionality</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event-card reveal from-right tech" data-category="tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 flex items-center justify-center">
+              <i class="fas fa-database text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Data Nexus</h3>
+            <p class="text-gray-300 text-center mb-4">Analyze datasets and extract insights</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-indigo-300 font-mono">Team (3)</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-purple-300 font-mono">120 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-purple-400"></i>
+                    <span>Real-world dataset provided</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-purple-400"></i>
+                    <span>Tools: Python, R, or Excel</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-purple-400"></i>
+                    <span>Present findings to judges</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-purple-600 hover:bg-purple-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== NON-TECHNICAL EVENTS ===== -->
+      <!-- Event 4 -->
+      <div class="event-card reveal from-left non-tech" data-category="non-tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-pink-400 hover:shadow-lg hover:shadow-pink-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-pink-600 to-red-500 flex items-center justify-center">
+              <i class="fas fa-film text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">CineSpark</h3>
+            <p class="text-gray-300 text-center mb-4">Short film competition on tech themes</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-pink-300 font-mono">Team (4)</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-red-300 font-mono">3 mins max</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-pink-400"></i>
+                    <span>Theme: "Future of AI"</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-pink-400"></i>
+                    <span>Submit by May 1st</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-pink-400"></i>
+                    <span>Screening during symposium</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-pink-600 hover:bg-pink-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 5 -->
+      <div class="event-card reveal from-bottom non-tech" data-category="non-tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-yellow-600 to-amber-500 flex items-center justify-center">
+              <i class="fas fa-chess-knight text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">MindMaze</h3>
+            <p class="text-gray-300 text-center mb-4">Puzzle-solving and strategy challenge</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-yellow-300 font-mono">Individual</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-amber-300 font-mono">45 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
+                    <span>3 rounds: Logic, Math, Visual</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
+                    <span>No prior knowledge needed</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-yellow-400"></i>
+                    <span>Speed + accuracy matter</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-yellow-600 hover:bg-yellow-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="event-card reveal from-right non-tech" data-category="non-tech">
+        <div class="h-full bg-gray-800 bg-opacity-60 border border-gray-700 rounded-xl overflow-hidden transition-all duration-300 hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/20">
+          <div class="p-6">
+            <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-gradient-to-r from-orange-600 to-red-500 flex items-center justify-center">
+              <i class="fas fa-microphone-alt text-2xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-center text-white mb-2">Pitch Perfect</h3>
+            <p class="text-gray-300 text-center mb-4">Tech product pitching competition</p>
+            <div class="flex justify-center gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-orange-300 font-mono">Team (2)</span>
+              <span class="px-2 py-1 bg-gray-700 rounded-full text-xs text-red-300 font-mono">5 mins</span>
+            </div>
+            <div class="mt-6 pt-4 border-t border-gray-700">
+              <button class="event-details-btn w-full py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium text-white transition-all flex items-center justify-between">
+                View Details
+                <i class="fas fa-chevron-down text-xs ml-2 transition-transform duration-300"></i>
+              </button>
+              <div class="event-details-content hidden pt-4">
+                <ul class="text-sm text-gray-400 space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-orange-400"></i>
+                    <span>Invent a futuristic tech product</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-orange-400"></i>
+                    <span>5-minute pitch + Q&A</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-circle text-[6px] mt-2 mr-2 text-orange-400"></i>
+                    <span>Judged on creativity + feasibility</span>
+                  </li>
+                </ul>
+                <a href="#register" class="mt-4 inline-block w-full py-2 text-center bg-orange-600 hover:bg-orange-700 rounded-lg text-white font-medium transition-all">
+                  Register Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Background grid pattern */
+  .bg-grid-white\/\[0\.05\] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+
+  /* Card hover effects */
+  .event-card div:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Reveal animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal.from-left {
+    transform: translateX(-40px);
+  }
+  .reveal.from-right {
+    transform: translateX(40px);
+  }
+  .reveal.from-bottom {
+    transform: translateY(40px);
+  }
+
+  /* Active filter button */
+  .event-filter-btn.active {
+    color: white;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  }
+</style>
+
+<script>
+  // Event filtering functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.event-filter-btn');
+    const eventCards = document.querySelectorAll('.event-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Filter events
+        const filter = button.dataset.filter;
+        eventCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Toggle event details
+    document.querySelectorAll('.event-details-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('i');
+        
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+
+    // Intersection Observer for reveal animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  });
+</script>
+  
+  <section id="register" class="bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 px-6 md:px-20">
+    <div class="reveal from-bottom max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">📌 Register & Secure Your Spot</h2>
+      <p class="text-gray-300 text-lg md:text-xl mb-8">Don’t miss the most electrifying symposium of the year!</p>
+  
+      <a href="https://forms.gle/3B6zjxubVHB6eHvu8" target="_blank"
+        class="inline-block bg-blue-600 hover:bg-blue-700 transition-all duration-300 ease-in-out text-white font-semibold py-3 px-8 rounded-full text-lg shadow-xl hover:scale-105 active:scale-95">
+        📝 Register Now
+      </a>
+    </div>
+  
+    <!-- Payment Info -->
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+      <!-- QR Box -->
+      <div class="reveal from-left bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-xl hover:shadow-blue-500/30 transition-all duration-300 text-center transform hover:scale-[1.02]">
+        <h3 class="text-2xl font-bold mb-2">💳 Payment Details</h3>
+        <p class="text-gray-300 mb-4 text-sm md:text-base">Pay <span class="text-green-400 font-semibold">₹100</span> via UPI, GPay, or PhonePe</p>
+        <img src="pay-qr.jpg" alt="QR Code" class="mx-auto w-40 h-40 mb-4 rounded-lg border-4 border-white/30 hover:shadow-lg hover:shadow-green-400/40 transition duration-300" />
+        <div class="text-sm text-gray-400 space-y-1">
+          <p><span class="font-medium">UPI ID:</span> veeramsd538@oksbi</p>
+          <p><span class="font-medium">Name:</span> Veerasurya A</p>
+        </div>
+      </div>
+  
+      <!-- Instructions -->
+      <div class="reveal from-right bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-[1.02]">
+        <h3 class="text-2xl font-bold mb-4">📝 How to Register</h3>
+        <ul class="text-gray-300 space-y-3 text-sm md:text-base text-left list-disc list-inside">
+          <li>Fill out the registration form using the button above.</li>
+          <li>Complete your payment via the given QR or UPI.</li>
+          <li>Upload the payment screenshot in the form.</li>
+          <li>Wait for the confirmation email after verification.</li>
+          <li>Show up and have a blast! 🚀</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-gradient-to-t from-black via-gray-900 to-black text-white py-20 px-6 md:px-20">
+    <div class="reveal from-bottom max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">📬 Get in Touch</h2>
+      <p class="text-gray-300 text-lg md:text-xl">Have questions? Reach out to us anytime!</p>
+    </div>
+  
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+      <!-- Contact Info -->
+      <div class="reveal from-left bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-xl space-y-6 text-left">
+        <div class="flex items-start gap-4">
+          <i class="text-2xl text-blue-400 fas fa-phone"></i>
+          <div>
+            <p class="text-gray-300 font-semibold">Phone</p>
+            <p class="text-white">+91 98765 43210</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <i class="text-2xl text-green-400 fas fa-envelope"></i>
+          <div>
+            <p class="text-gray-300 font-semibold">Email</p>
+            <p class="text-white">infoganza2k25@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <i class="text-2xl text-purple-400 fas fa-map-marker-alt"></i>
+          <div>
+            <p class="text-gray-300 font-semibold">Location</p>
+            <p class="text-white">Government College of Engineering, Bodinayakkanur
+                Theni District, Tamil Nadu – 625582
+                India</p>
+          </div>
+        </div>
+  
+        <!-- Social Links -->
+        <div class="flex gap-6 mt-6">
+          <a href="https://www.instagram.com/infoganza_2k25?utm_source=qr&igsh=MWNud2NvaG04cWd0MQ==" target="_blank" class="text-white text-2xl hover:text-pink-500 transition-all">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a  target="_blank" class="text-white text-2xl hover:text-green-400 transition-all">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:infoganza2k25@gmail.com" class="text-white text-2xl hover:text-yellow-400 transition-all">
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Optional Contact Form -->
+      <form action="https://formsubmit.co/infoganza2k25@gmail.com" method="POST" class="reveal from-right space-y-4">
+        <!-- Prevent spam -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- Your fields -->
+        <input type="text" name="name" placeholder="Your Name" required
+          class="w-full px-4 py-3 bg-white/5 text-white placeholder-gray-400 rounded-lg border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      
+        <input type="email" name="email" placeholder="Your Email" required
+          class="w-full px-4 py-3 bg-white/5 text-white placeholder-gray-400 rounded-lg border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      
+        <textarea name="message" rows="4" placeholder="Your Message" required
+          class="w-full px-4 py-3 bg-white/5 text-white placeholder-gray-400 rounded-lg border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+      
+        <button type="submit"
+          class="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-white py-3 rounded-lg font-semibold hover:scale-105 active:scale-95">
+          🚀 Send Message
+        </button>
+      </form>
+      
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+      <!-- Quick Links (on mobile, stack vertically) -->
+      <div class="space-y-4 md:space-y-0 md:space-x-6">
+        <a href="#home" class="hover:text-green-400">Home</a>
+        <a href="#about" class="hover:text-green-400">About</a>
+        <a href="#schedule" class="hover:text-green-400">Schedule</a>
+        <a href="#events" class="hover:text-green-400">Events</a>
+        <a href="#register" class="hover:text-green-400">Register</a>
+        <a href="#contact" class="hover:text-green-400">Contact</a>
+      </div>
+  
+      <!-- Social Media Icons -->
+      <div class="space-x-6 mt-4 md:mt-0">
+        <a  target="_blank" class="hover:text-green-400">
+          <i class="fab fa-facebook-square text-xl"></i>
+        </a>
+        <a  target="_blank" class="hover:text-green-400">
+          <i class="fab fa-twitter-square text-xl"></i>
+        </a>
+        <a href="https://www.instagram.com/infoganza_2k25?utm_source=qr&igsh=MWNud2NvaG04cWd0MQ==" target="_blank" class="hover:text-green-400">
+          <i class="fab fa-instagram-square text-xl"></i>
+        </a>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="mt-4 md:mt-0">
+        <p class="text-sm">&copy; 2025 Infoganza 2k25. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include Font Awesome -->
+
+  
+  
+  
+  
+  
+
+  <script>
+    // Countdown Timer
+    const eventDate = new Date("May 6, 2025 09:00:00").getTime();
+    const countdownFunction = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+  
+      if (distance < 0) {
+        clearInterval(countdownFunction);
+        document.getElementById("timer").innerText = "LIFTOFF! 🚀";
+      } else {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }
+    }, 1000);
+  
+    // Mobile Nav Toggle + Outside Click Close
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+  
+    menuToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.toggle("hidden");
+    });
+  
+    mobileMenu.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+  
+    document.addEventListener("click", () => {
+      if (!mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+  
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll("#mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  
+    // Typewriter Animation
+    document.addEventListener("DOMContentLoaded", () => {
+      const text = "Infoganza_2k25";
+      const typewriter = document.getElementById("typewriter");
+      let index = 0;
+      let isDeleting = false;
+  
+      function loopTypewriter() {
+        typewriter.textContent = isDeleting
+          ? text.substring(0, index--)
+          : text.substring(0, index++);
+  
+        if (!isDeleting && index === text.length + 1) {
+          isDeleting = true;
+          setTimeout(loopTypewriter, 1000);
+        } else if (isDeleting && index === 0) {
+          isDeleting = false;
+          setTimeout(loopTypewriter, 500);
+        } else {
+          setTimeout(loopTypewriter, isDeleting ? 100 : 150);
+        }
+      }
+  
+      loopTypewriter();
+    });
+  </script>
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        // Reset animation when element leaves viewport
+        entry.target.classList.remove("active");
+      }
+    });
+  },
+  { threshold: 0.1 } // Trigger when 10% of element is visible
+);
+
+revealElements.forEach((el) => observer.observe(el));// For immediate reveal on refresh if already in view
+  </script>
+  
+  
+  
+  </body>
+</html>
